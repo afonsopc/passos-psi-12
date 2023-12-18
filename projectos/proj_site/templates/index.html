@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A minha aplicação Flask</title>
+</head>
+<body>
+    <h1 id="demo-text">Olá, esta é a página index</h1>
+    <img src="{{ url_for('static', filename='images/barco.png') }}" alt="imagem de um barco">
+
+    <button onclick="changeTextColor()">Alterar a cor pra vermelho</button>
+    <button onclick="resetTextColor()">Repor a cor</button>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

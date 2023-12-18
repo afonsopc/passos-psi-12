@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Adicionar Utilizador</h1>
+    <form action="{{ url_for('add_user') }}" method="POST">
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <input type="submit" value="Adicionar">
+    </form>
+    <br>
+    <a href="{{ url_for('list_users') }}">Voltar para a Lista de Utilizadores</a>
+</body>
+</html>

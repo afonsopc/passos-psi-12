@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="error">
+        <div class="error-text">
+            <h1>Erro {{error}}</h1>
+            <p>Humm! Alguma coisa correu mal!</p>
+        </div>
+
+        <div class="error-image">
+            <img src="{{ url_for('static', filename='images/error.jpg') }}" alt="Imagem de um erro">
+        </div>
+    </div>
+</body>
+</html>
